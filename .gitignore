@@ -1,0 +1,21 @@
+.DS_Store
+
+# SwiftPM
+.build/
+.swiftpm/
+.swiftpm-cache/
+Package.resolved
+
+# Xcode
+DerivedData/
+.derived/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Local caches and temp artifacts
+.cache/
+.tmp/
+
+# Simulator / macOS noise
+*.swp
