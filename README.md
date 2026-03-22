@@ -76,6 +76,32 @@ Notes:
 - OCR and PDF parsing run in the browser using CDN-hosted libraries.
 - Camera capture may require HTTPS on some devices outside localhost.
 
+### Deploy on Render
+
+This repo now includes a Render blueprint at `render.yaml` for the mobile web app.
+
+Fastest path:
+
+1. Push this repo to GitHub.
+2. In Render, choose `New +` -> `Blueprint`.
+3. Connect the GitHub repo.
+4. Render will detect `render.yaml` and create a static web service named `glutenscanner-web`.
+5. Deploy.
+
+What Render will use:
+
+- Service type: static site
+- Publish directory: `web`
+- No build command required
+
+If you prefer creating it manually instead of using the blueprint:
+
+- Environment: `Static Site`
+- Build Command: leave blank
+- Publish Directory: `web`
+
+The web app is already structured for static hosting, so Render only needs to serve the files in `web/`.
+
 ### Native iPhone app
 
 #### Requirements
